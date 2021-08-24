@@ -1,5 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Source: https://github.com/goadapp/goad/
+Source: https://github.com/compassion-technology/goad/
 
 Files: *
 Copyright: 2016 Joao Cardoso, Matias Korhonen, Rasmus Sten, and Stephen Sykes

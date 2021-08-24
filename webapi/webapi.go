@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/goadapp/goad/goad"
-	"github.com/goadapp/goad/goad/types"
-	"github.com/goadapp/goad/result"
+	"github.com/compassion-technology/goad/goad"
+	"github.com/compassion-technology/goad/goad/types"
+	"github.com/compassion-technology/goad/result"
 	"github.com/gorilla/websocket"
 )
 

@@ -17,7 +17,7 @@ BUILD := `git rev-parse HEAD`
 TIMESTAMP := `git log -1 --date=format:%Y%m%d%H%M --pretty=format:%cd`
 
 # Use linker flags to provide version/build settings to the target
-LDFLAGS = -ldflags "-X=github.com/goadapp/goad/version.version=$(VERSION) -X=github.com/goadapp/goad/version.build=$(BUILD) -X=github.com/goadapp/goad/version.travisTag=$(TRAVIS_TAG)"
+LDFLAGS = -ldflags "-X=github.com/compassion-technology/goad/version.version=$(VERSION) -X=github.com/compassion-technology/goad/version.build=$(BUILD) -X=github.com/compassion-technology/goad/version.travisTag=$(TRAVIS_TAG)"
 
 # go source files, ignore vendor directory
 SRC = $(shell find . -type f -name '*.go' -not -path "./vendor/*")

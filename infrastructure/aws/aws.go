@@ -10,8 +10,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/goadapp/goad/goad/types"
-	"github.com/goadapp/goad/infrastructure/aws/sqsadapter"
+	"github.com/compassion-technology/goad/goad/types"
+	"github.com/compassion-technology/goad/infrastructure/aws/sqsadapter"
 
 	"github.com/Songmu/prompter"
 	"github.com/aws/aws-sdk-go/aws"
@@ -20,9 +20,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/lambda"
 	"github.com/aws/aws-sdk-go/service/sqs"
-	"github.com/goadapp/goad/infrastructure"
-	"github.com/goadapp/goad/result"
-	"github.com/goadapp/goad/version"
+	"github.com/compassion-technology/goad/infrastructure"
+	"github.com/compassion-technology/goad/result"
+	"github.com/compassion-technology/goad/version"
 	uuid "github.com/satori/go.uuid"
 )
 

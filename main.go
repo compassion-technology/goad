@@ -1,6 +1,6 @@
 package main
 
-import "github.com/goadapp/goad/cli"
+import "github.com/compassion-technology/goad/cli"
 
 func main() {
 	cli.Run()

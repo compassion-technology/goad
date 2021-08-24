@@ -1,7 +1,7 @@
 dist: xenial
 
 language: go
-go_import_path: github.com/goadapp/goad
+go_import_path: github.com/compassion-technology/goad
 
 go:
   - 1.8
@@ -22,7 +22,7 @@ script:
 deploy:
   provider: releases
   # will mark a (real) release from the WebUI
-  # https://github.com/goadapp/goad/issues/149#issuecomment-319097342
+  # https://github.com/compassion-technology/goad/issues/149#issuecomment-319097342
   # from now we mark everything as pre-release
   prerelease: true
   api_key:

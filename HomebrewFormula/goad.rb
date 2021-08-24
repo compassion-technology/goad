@@ -3,7 +3,7 @@ require "language/go"
 class Goad < Formula
   desc "AWS Lambda powered, highly distributed, load testing tool built in Go."
   homepage "https://goad.io/"
-  url "https://github.com/goadapp/goad.git", :tag => "v1.4.1"
+  url "https://github.com/compassion-technology/goad.git", :tag => "v1.4.1"
 
   depends_on "go" => :build
 
@@ -14,7 +14,7 @@ class Goad < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    dir = buildpath/"src/github.com/goadapp/goad"
+    dir = buildpath/"src/github.com/compassion-technology/goad"
     dir.install buildpath.children
     ENV.prepend_create_path "PATH", buildpath/"bin"
     Language::Go.stage_deps resources, buildpath/"src"
