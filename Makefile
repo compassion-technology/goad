@@ -6,7 +6,8 @@ TARGET := goad
 # Prepend our vendor directory to the system GOPATH
 # so that import path resolution will prioritize
 # our third party snapshots.
-GOPATH := ${PWD}/vendor:${GOPATH}
+VENDOR-PATH := ${PWD}/vendor
+GOPATH := $(VENDOR-PATH):${GOPATH}
 export GOPATH
 
 # These will be provided to the target
@@ -44,8 +45,8 @@ lambda:
 	@$(ZIP) data/lambda data/lambda
 
 bindata: lambda
-	@go get github.com/jteeuwen/go-bindata/...
-	@go-bindata -modtime $(TIMESTAMP) -nocompress -pkg infrastructure -o infrastructure/bindata.go data/lambda.zip
+	@go install github.com/go-bindata/go-bindata/v3/...@latest
+	@$(VENDOR-PATH)/bin/go-bindata -modtime $(TIMESTAMP) -nocompress -pkg infrastructure -o infrastructure/bindata.go data/lambda.zip
 
 linux64: bindata
 	@GOOS=linux GOARCH=amd64 $(GO-BUILD) -o build/linux/x86-64/$(TARGET)
