@@ -35,7 +35,7 @@ To build the Goad CLI from scratch, make sure you have a working Go 1.5 workspac
 2. Install Go [bindata][]:
 
   ```sh
-  go get -u github.com/jteeuwen/go-bindata/...
+  go get github.com/go-bindata/go-bindata/v3/...@latest
   ```
 
 3. Run make to build for all supported platforms

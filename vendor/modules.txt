@@ -12,7 +12,7 @@ github.com/Songmu/prompter
 # github.com/alecthomas/colour v0.1.0
 ## explicit
 # github.com/alecthomas/repr v0.0.0-20210801044451-80ca428c5142
-## explicit; go 1.15
+## explicit
 # github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc
 ## explicit
 github.com/alecthomas/template
@@ -103,6 +103,8 @@ github.com/docker/libtrust
 # github.com/dustin/go-humanize v0.0.0-20151125214831-8929fe90cee4
 ## explicit
 github.com/dustin/go-humanize
+# github.com/go-bindata/go-bindata/v3 v3.1.3
+## explicit
 # github.com/go-ini/ini v1.8.6
 ## explicit
 github.com/go-ini/ini
@@ -144,7 +146,7 @@ github.com/pmezard/go-difflib/difflib
 ## explicit
 github.com/satori/go.uuid
 # github.com/sergi/go-diff v1.2.0
-## explicit; go 1.12
+## explicit
 # github.com/smartystreets/goconvey v1.6.4
 ## explicit
 # github.com/spf13/afero v0.0.0-20170217164146-9be650865eab
@@ -161,13 +163,13 @@ github.com/stretchr/testify/assert
 ## explicit
 golang.org/x/crypto/ssh/terminal
 # golang.org/x/net v0.0.0-20200226121028-0de0cce0169b
-## explicit; go 1.11
+## explicit
 golang.org/x/net/context
 golang.org/x/net/context/ctxhttp
 golang.org/x/net/internal/socks
 golang.org/x/net/proxy
 # golang.org/x/sys v0.0.0-20190412213103-97732733099d
-## explicit; go 1.12
+## explicit
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 # golang.org/x/text v0.3.0

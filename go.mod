@@ -32,6 +32,7 @@ require (
 	github.com/docker/go-connections v0.2.2-0.20170331145122-e15c02316c12 // indirect
 	github.com/docker/go-units v0.3.2 // indirect
 	github.com/docker/libtrust v0.0.0-20160708172513-aabc10ec26b7 // indirect
+	github.com/go-bindata/go-bindata/v3 v3.1.3 // indirect
 	github.com/go-ini/ini v1.8.6 // indirect
 	github.com/gorilla/context v1.1.1 // indirect
 	github.com/gorilla/mux v1.4.1-0.20170524010104-043ee6597c29 // indirect
