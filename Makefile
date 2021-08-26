@@ -45,7 +45,7 @@ lambda:
 	@$(ZIP) data/lambda data/lambda
 
 bindata: lambda
-	@go install github.com/go-bindata/go-bindata/v3/...@latest
+	@go install github.com/go-bindata/go-bindata/...@latest
 	@$(VENDOR-PATH)/bin/go-bindata -modtime $(TIMESTAMP) -nocompress -pkg infrastructure -o infrastructure/bindata.go data/lambda.zip
 
 linux64: bindata
